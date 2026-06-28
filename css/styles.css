@@ -1847,3 +1847,8 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   .feature-card { grid-template-columns: 1fr; }
   .bento-row { grid-template-columns: 1fr; }
 }
+
+/* header CTA pill (Stage 4) */
+.btn.header-cta { padding: 9px 18px; font-size: 13px; }
+.btn.header-cta span { font-weight: 700; margin-left: 2px; }
+@media (max-width: 760px) { .btn.header-cta { display: none; } }
