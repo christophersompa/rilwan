@@ -288,7 +288,7 @@ function initProductDetail() {
         <button class="btn btn-flare" type="button" data-add-detail="${product.id}">Add to cart</button>
       </div>
       <div class="detail-meta">
-        <span>Free shipping over $50</span>
+        <span>Free shipping over £50</span>
         <span>Ships within 2–4 days</span>
         <span>Easy 14-day returns</span>
       </div>
