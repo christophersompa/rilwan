@@ -88,7 +88,7 @@ function cartTotal() {
 }
 
 function formatPrice(value) {
-  return "$" + value.toFixed(2);
+  return "£" + value.toFixed(2);
 }
 
 function renderCartBadge() {
