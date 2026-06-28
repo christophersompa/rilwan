@@ -31,18 +31,18 @@
    Swap the ph(...) call for a real image URL when you have one.
 ----------------------------------------------------------------------- */
 const GRADIENT_PALETTE = [
-  ['#FF8B2D', '#D86515'],  // bright orange → deep orange
-  ['#FFB36B', '#F47B20'],  // peach → orange
-  ['#F5C842', '#F47B20'],  // yellow → orange
-  ['#FFCAA8', '#FF8B2D'],  // soft peach → bright orange
-  ['#FFD9B0', '#D86515'],  // cream peach → deep orange
-  ['#FFA882', '#D86515'],  // salmon → deep orange
-  ['#F5C842', '#E89614'],  // yellow → amber
-  ['#FFE9D6', '#F47B20'],  // cream → orange
-  ['#FF9966', '#D86515'],  // coral → deep orange
-  ['#FFB088', '#A8430A'],  // peach → dark amber
-  ['#FFCC70', '#FF6B1A'],  // gold → vivid orange
-  ['#FFA060', '#9B3B0A']   // tangerine → burnt
+  ['#3B82F6', '#1F63E8'],  // blue
+  ['#5B9BF8', '#1E5FE0'],  // light blue -> blue
+  ['#8DBBFB', '#2E6FEA'],  // pale blue -> blue
+  ['#2E6FEA', '#123FA6'],  // blue -> deep
+  ['#4F8DF7', '#1F63E8'],  // sky blue -> blue
+  ['#7AAEF9', '#1B57CC'],  // soft blue -> blue
+  ['#1F63E8', '#0B2E78'],  // blue -> navy
+  ['#9CC4FC', '#2E6FEA'],  // pale -> blue
+  ['#3E82F4', '#0F3FA8'],  // blue -> deep
+  ['#6BA3F8', '#1F63E8'],  // sky -> blue
+  ['#2A66E2', '#0A2A6E'],  // blue -> darkest navy
+  ['#86B6FB', '#1E5FE0']   // light -> blue
 ];
 
 function _hash(str) {
