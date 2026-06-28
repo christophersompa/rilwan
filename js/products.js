@@ -31,18 +31,18 @@
    Swap the ph(...) call for a real image URL when you have one.
 ----------------------------------------------------------------------- */
 const GRADIENT_PALETTE = [
-  ['#FF8B2D', '#D86515'],  // bright orange → deep orange
-  ['#FFB36B', '#F47B20'],  // peach → orange
-  ['#F5C842', '#F47B20'],  // yellow → orange
-  ['#FFCAA8', '#FF8B2D'],  // soft peach → bright orange
-  ['#FFD9B0', '#D86515'],  // cream peach → deep orange
-  ['#FFA882', '#D86515'],  // salmon → deep orange
-  ['#F5C842', '#E89614'],  // yellow → amber
-  ['#FFE9D6', '#F47B20'],  // cream → orange
-  ['#FF9966', '#D86515'],  // coral → deep orange
-  ['#FFB088', '#A8430A'],  // peach → dark amber
-  ['#FFCC70', '#FF6B1A'],  // gold → vivid orange
-  ['#FFA060', '#9B3B0A']   // tangerine → burnt
+  ['#1EA6C4', '#0B6E8F'],  // teal
+  ['#3FB9D2', '#0E7C9A'],  // light teal -> teal
+  ['#7FD0DE', '#1488AB'],  // pale aqua -> teal
+  ['#159FBE', '#084C66'],  // teal -> deep teal
+  ['#2BB3CC', '#0B6E8F'],  // aqua -> teal
+  ['#5AC4D6', '#127E9C'],  // soft aqua -> teal
+  ['#0FA0C0', '#073F57'],  // teal -> navy teal
+  ['#86D6E2', '#1488AB'],  // pale -> teal
+  ['#22ABCB', '#0A5F7E'],  // teal -> deep
+  ['#4FC0D4', '#0B6E8F'],  // aqua -> teal
+  ['#1296B6', '#063C53'],  // teal -> darkest
+  ['#69CADB', '#0E7C9A']   // light aqua -> teal
 ];
 
 function _hash(str) {

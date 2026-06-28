@@ -4,13 +4,13 @@
    ============================================ */
 :root {
   /* core palette */
-  --orange:        #F47B20;
-  --orange-deep:   #D86515;
-  --orange-bright: #FF8B2D;
-  --orange-soft:   #FFF1E5;
-  --yellow:        #F5C842;
-  --yellow-deep:   #E6B025;
-  --yellow-soft:   #FFF6D6;
+  --teal:        #0B6E8F;
+  --teal-deep:   #095A75;
+  --teal-bright: #1488AB;
+  --teal-soft:   #E7F2F6;
+  --teal-accent:        #2BA6B8;
+  --teal-accent-deep:   #1E8595;
+  --teal-accent-soft:   #E2F4F6;
 
   /* neutrals */
   --ink:        #1A1A1A;
@@ -18,10 +18,10 @@
   --ink-soft:   #6B6B6B;
   --ink-faint:  #9A9A9A;
   --white:      #FFFFFF;
-  --cream:      #FAF6F0;
-  --cream-deep: #F0EAE0;
-  --line:       #ECE8E2;
-  --line-soft:  #F4F0EA;
+  --cream:      #F1F6F7;
+  --cream-deep: #E4EEF0;
+  --line:       #E4EDEE;
+  --line-soft:  #EFF5F6;
 
   --radius-sm: 8px;
   --radius-md: 14px;
@@ -83,7 +83,7 @@ p { margin: 0; }
 }
 
 a:focus-visible, button:focus-visible, input:focus-visible {
-  outline: 2px solid var(--orange);
+  outline: 2px solid var(--teal);
   outline-offset: 3px;
 }
 
@@ -115,12 +115,12 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 
 .btn-primary,
 .btn-flare {
-  background: var(--orange);
+  background: var(--teal);
   color: var(--white);
   box-shadow: var(--shadow-soft);
 }
 .btn-primary:hover,
-.btn-flare:hover { background: var(--orange-deep); box-shadow: var(--shadow-card); }
+.btn-flare:hover { background: var(--teal-deep); box-shadow: var(--shadow-card); }
 
 .btn-ghost {
   background: transparent;
@@ -156,7 +156,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 }
 .marquee__track span em {
   font-style: normal;
-  color: var(--orange-bright);
+  color: var(--teal-bright);
 }
 @keyframes marquee {
   from { transform: translateX(0); }
@@ -197,9 +197,9 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   display: inline-block;
   width: 22px;
   height: 22px;
-  background: var(--orange);
+  background: var(--teal);
   border-radius: 50%;
-  box-shadow: -10px 0 0 var(--orange);
+  box-shadow: -10px 0 0 var(--teal);
   clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
 }
 .nav-links {
@@ -221,7 +221,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 }
 .nav-links a:hover { color: var(--ink); }
 .nav-links a.is-active {
-  background: var(--orange);
+  background: var(--teal);
   color: var(--white);
 }
 
@@ -253,7 +253,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   height: 19px;
   padding: 0 5px;
   border-radius: var(--radius-pill);
-  background: var(--orange);
+  background: var(--teal);
   color: var(--white);
   font-size: 10px;
   font-weight: 700;
@@ -279,13 +279,13 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 }
 
 /* ============================================
-   HERO — orange gradient, two-column with lifestyle image
+   HERO — teal gradient, two-column with lifestyle image
    ============================================ */
 .hero {
   position: relative;
   margin: 20px 28px 0;
   border-radius: var(--radius-xl);
-  background: linear-gradient(135deg, var(--orange) 0%, var(--orange-bright) 100%);
+  background: linear-gradient(135deg, var(--teal) 0%, var(--teal-bright) 100%);
   overflow: hidden;
   padding: 64px 56px;
   min-height: 500px;
@@ -404,7 +404,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   padding: 0 2px;
 }
 .hero-card .meta h3 { font-size: 12px; color: var(--ink); font-weight: 600; font-family: var(--font-body); }
-.hero-card .meta .price { font-size: 12px; font-weight: 700; color: var(--orange); }
+.hero-card .meta .price { font-size: 12px; font-weight: 700; color: var(--teal); }
 
 /* hero ratings badge top-right */
 .hero-rating {
@@ -427,7 +427,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 .hero-rating .stars-inner {
   display: flex;
   gap: 1px;
-  color: var(--orange);
+  color: var(--teal);
   font-size: 11px;
 }
 .hero-rating .stars-label {
@@ -479,7 +479,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--orange);
+  color: var(--teal);
   flex-shrink: 0;
 }
 .trust-icon svg { width: 20px; height: 20px; }
@@ -530,7 +530,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   border-bottom: 1px solid var(--ink);
   padding-bottom: 2px;
 }
-.section-link:hover { color: var(--orange); border-color: var(--orange); }
+.section-link:hover { color: var(--teal); border-color: var(--teal); }
 
 /* ============================================
    Categories — asymmetric mosaic
@@ -587,7 +587,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: var(--orange);
+  background: var(--teal);
   color: var(--white);
   display: inline-flex;
   align-items: center;
@@ -654,8 +654,8 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   box-shadow: var(--shadow-soft);
   transition: color 0.18s ease, background 0.18s ease;
 }
-.wishlist-btn:hover { color: var(--orange); }
-.wishlist-btn.is-active { color: var(--orange); }
+.wishlist-btn:hover { color: var(--teal); }
+.wishlist-btn.is-active { color: var(--teal); }
 .wishlist-btn svg { width: 16px; height: 16px; }
 
 /* sale tag top-left */
@@ -664,7 +664,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   top: 12px;
   left: 12px;
   z-index: 2;
-  background: var(--orange);
+  background: var(--teal);
   color: var(--white);
   font-size: 10px;
   font-weight: 700;
@@ -698,7 +698,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   z-index: 2;
 }
 .product-card:hover .quick-shop { opacity: 1; transform: translateY(0); }
-.quick-shop:hover { background: var(--orange); color: var(--white); }
+.quick-shop:hover { background: var(--teal); color: var(--white); }
 .quick-shop svg { width: 14px; height: 14px; }
 
 .product-card .body {
@@ -717,7 +717,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   color: var(--ink);
   letter-spacing: 0;
 }
-.product-card h3 a:hover { color: var(--orange); }
+.product-card h3 a:hover { color: var(--teal); }
 
 .product-card .rating-row {
   display: flex;
@@ -725,7 +725,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   gap: 6px;
 }
 .product-card .rating-stars {
-  color: var(--orange);
+  color: var(--teal);
   font-size: 11px;
   letter-spacing: 1px;
 }
@@ -756,7 +756,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   line-height: 1;
   transition: background 0.18s ease;
 }
-.product-card .add-btn:hover { background: var(--orange); }
+.product-card .add-btn:hover { background: var(--teal); }
 .product-card a.card-link { color: inherit; display: block; }
 
 @media (max-width: 980px) {
@@ -768,15 +768,15 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 
 /* legacy swatch backgrounds — kept so older markup still renders something useful */
 .bg-teal,
-.bg-sage { background: var(--orange-soft); }
-.bg-lime { background: var(--yellow-soft); }
+.bg-sage { background: var(--teal-soft); }
+.bg-lime { background: var(--teal-accent-soft); }
 .bg-ink  { background: var(--cream-deep); }
 
 /* ============================================
-   Featured — yellow section with giant brand wordmark
+   Featured — teal-accent section with giant brand wordmark
    ============================================ */
 .featured-section {
-  background: var(--yellow);
+  background: var(--teal-accent);
   margin: 28px;
   border-radius: var(--radius-xl);
   position: relative;
@@ -842,7 +842,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   gap: 18px;
 }
 .featured-badge {
-  background: var(--orange);
+  background: var(--teal);
   color: var(--white);
   border-radius: 50%;
   width: 120px;
@@ -891,7 +891,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 .featured-product-card .meta .price {
   font-size: 12px;
   font-weight: 700;
-  color: var(--orange);
+  color: var(--teal);
   margin-top: 2px;
 }
 
@@ -1002,7 +1002,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background: var(--orange);
+  background: var(--teal);
   border: none;
   color: var(--white);
   display: inline-flex;
@@ -1051,7 +1051,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   align-items: center;
   justify-content: center;
 }
-.testimonial-nav button:hover { background: var(--orange); color: var(--white); border-color: var(--orange); }
+.testimonial-nav button:hover { background: var(--teal); color: var(--white); border-color: var(--teal); }
 
 .testimonial-grid {
   display: grid;
@@ -1099,7 +1099,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   gap: 10px;
   margin-top: 3px;
 }
-.testimonial-stars { color: var(--orange); letter-spacing: 1px; }
+.testimonial-stars { color: var(--teal); letter-spacing: 1px; }
 
 @media (max-width: 860px) {
   .testimonial-grid { grid-template-columns: 1fr; }
@@ -1111,7 +1111,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 .fresh-looks {
   margin: 28px;
   border-radius: var(--radius-xl);
-  background: var(--orange-soft);
+  background: var(--teal-soft);
   overflow: hidden;
   position: relative;
   display: grid;
@@ -1166,7 +1166,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 .cta-section {
   margin: 28px;
   border-radius: var(--radius-xl);
-  background: var(--orange-soft);
+  background: var(--teal-soft);
   overflow: hidden;
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
@@ -1213,7 +1213,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 .banner-form button {
   border: none;
   border-radius: var(--radius-pill);
-  background: var(--orange);
+  background: var(--teal);
   color: var(--white);
   padding: 12px 26px;
   font-weight: 600;
@@ -1221,7 +1221,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   font-size: 13px;
   transition: background 0.18s ease;
 }
-.banner-form button:hover { background: var(--orange-deep); }
+.banner-form button:hover { background: var(--teal-deep); }
 
 .cta-image {
   position: relative;
@@ -1240,7 +1240,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 /* legacy .banner (still used on About page) */
 .banner {
   border-radius: var(--radius-lg);
-  background: var(--orange);
+  background: var(--teal);
   color: var(--white);
   padding: 48px;
   display: grid;
@@ -1290,7 +1290,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 .footer-grid p { color: rgba(255,255,255,0.6); font-size: 13px; max-width: 32ch; }
 .footer-links { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
 .footer-links a { font-size: 13px; color: rgba(255,255,255,0.65); transition: color 0.15s ease; }
-.footer-links a:hover { color: var(--orange-bright); }
+.footer-links a:hover { color: var(--teal-bright); }
 
 .footer-bottom {
   padding: 20px 0;
@@ -1313,7 +1313,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   font-size: clamp(80px, 24vw, 360px);
   line-height: 0.85;
   letter-spacing: -0.05em;
-  color: var(--orange);
+  color: var(--teal);
   padding: 20px 0 0;
   user-select: none;
   overflow: hidden;
@@ -1353,7 +1353,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   text-transform: uppercase;
 }
 .breadcrumb a { color: var(--ink-soft); }
-.breadcrumb a:hover { color: var(--orange); }
+.breadcrumb a:hover { color: var(--teal); }
 
 /* ============================================
    Filter bar (shop page)
@@ -1378,8 +1378,8 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 }
 .filter-pill:hover { color: var(--ink); border-color: var(--ink); }
 .filter-pill.is-active {
-  background: var(--orange);
-  border-color: var(--orange);
+  background: var(--teal);
+  border-color: var(--teal);
   color: var(--white);
 }
 
@@ -1400,7 +1400,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   display: inline-block;
   font-size: 11px;
   font-weight: 700;
-  color: var(--orange);
+  color: var(--teal);
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
@@ -1511,7 +1511,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   margin-top: 6px;
   padding: 0;
 }
-.cart-line .remove:hover { color: var(--orange); }
+.cart-line .remove:hover { color: var(--teal); }
 .cart-line .line-price { font-weight: 700; min-width: 70px; text-align: right; font-size: 15px; }
 
 .summary-card {
@@ -1533,23 +1533,23 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 .summary-row.total {
   font-size: 18px;
   font-weight: 700;
-  color: var(--orange-bright);
+  color: var(--teal-bright);
   padding-top: 14px;
   border-top: 1px solid rgba(255,255,255,0.18);
   margin-top: 6px;
 }
 .summary-card .btn-flare {
-  background: var(--orange);
+  background: var(--teal);
   color: var(--white);
 }
-.summary-card .btn-flare:hover { background: var(--orange-deep); }
+.summary-card .btn-flare:hover { background: var(--teal-deep); }
 
 .empty-cart {
   text-align: center;
   padding: 80px 20px;
   color: var(--ink-soft);
 }
-.empty-cart svg { margin: 0 auto 18px; width: 64px; opacity: 0.4; color: var(--orange); }
+.empty-cart svg { margin: 0 auto 18px; width: 64px; opacity: 0.4; color: var(--teal); }
 
 @media (max-width: 860px) {
   .cart-layout { grid-template-columns: 1fr; }
@@ -1590,8 +1590,8 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 
 /* About-page color-block fills replaced with photos via inline style; defaults below */
 .split-visual .bg-teal,
-.split-visual .bg-sage { background-color: var(--orange-soft); }
-.split-visual .bg-lime { background-color: var(--yellow-soft); }
+.split-visual .bg-sage { background-color: var(--teal-soft); }
+.split-visual .bg-lime { background-color: var(--teal-accent-soft); }
 .split-visual .bg-ink  { background-color: var(--cream-deep); }
 
 @media (max-width: 860px) {
@@ -1621,15 +1621,15 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   align-items: center;
   justify-content: center;
   margin-bottom: 18px;
-  background: var(--orange);
+  background: var(--teal);
   color: var(--white);
 }
 .value-card .icon-circle svg { width: 20px; height: 20px; stroke: currentColor !important; color: var(--white); }
-/* About had bg-teal/sage/lime/ink overrides — map all to brand orange */
+/* About had bg-teal/sage/lime/ink overrides — map all to brand teal */
 .value-card .icon-circle.bg-teal,
 .value-card .icon-circle.bg-sage,
 .value-card .icon-circle.bg-lime,
-.value-card .icon-circle.bg-ink { background: var(--orange); }
+.value-card .icon-circle.bg-ink { background: var(--teal); }
 .value-card .icon-circle.bg-lime svg,
 .value-card .icon-circle.bg-ink svg { stroke: var(--white) !important; }
 .value-card h3 { font-size: 16px; margin-bottom: 8px; font-family: var(--font-body); font-weight: 700; }
@@ -1729,14 +1729,14 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   align-items: center;
   justify-content: center;
 }
-.promo-close:hover { background: var(--orange); color: var(--white); }
+.promo-close:hover { background: var(--teal); color: var(--white); }
 .promo-badge {
   display: inline-flex;
   padding: 6px 14px;
   margin-bottom: 16px;
   border-radius: var(--radius-pill);
-  background: var(--orange-soft);
-  color: var(--orange-deep);
+  background: var(--teal-soft);
+  color: var(--teal-deep);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -1763,23 +1763,23 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   font-family: var(--font-body);
   outline: none;
 }
-.promo-form input:focus { border-color: var(--orange); }
+.promo-form input:focus { border-color: var(--teal); }
 .promo-form button {
   height: 48px;
   border: none;
   border-radius: var(--radius-pill);
-  background: var(--orange);
+  background: var(--teal);
   color: var(--white);
   font-weight: 600;
   font-size: 14px;
   cursor: pointer;
 }
-.promo-form button:hover { background: var(--orange-deep); }
+.promo-form button:hover { background: var(--teal-deep); }
 .promo-success {
   margin-top: 22px;
   font-size: 14px;
   font-weight: 600;
-  color: var(--orange);
+  color: var(--teal);
 }
 .promo-dismiss {
   display: block;
