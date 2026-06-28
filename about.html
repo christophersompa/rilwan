@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Aurora</title>
+<meta name="description" content="The story behind Aurora — placeholder copy, ready to be replaced with the real thing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="promo-overlay" data-promo-overlay role="dialog" aria-modal="true" aria-labelledby="promo-heading">
+  <div class="promo-modal">
+    <button class="promo-close" type="button" data-promo-close aria-label="Close promotional offer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+    <span class="promo-badge">Limited-time offer</span>
+    <h2 id="promo-heading">Get 10% off your order</h2>
+    <p class="promo-sub">Spend $50 or more and save 10% — drop your email and we'll send the code.</p>
+    <form class="promo-form" data-promo-form>
+      <input type="email" required placeholder="you@email.com" aria-label="Email address">
+      <button type="submit">Send my code</button>
+    </form>
+    <p class="promo-success" data-promo-success hidden>You're in — check your inbox for the code.</p>
+    <button class="promo-dismiss" type="button" data-promo-dismiss>No thanks, I'll pay full price</button>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html">Aurora</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="shop.html">Categories</a></li>
+      <li><a href="about.html" class="is-active">About</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="icon-btn" type="button" aria-label="Search">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      </button>
+      <a class="icon-btn" href="cart.html" aria-label="Cart">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 4h2l2.4 12.4a2 2 0 0 0 2 1.6h7.2a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg>
+        <span class="cart-count" data-cart-count>0</span>
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open menu">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-drawer" data-nav-drawer>
+  <div class="drawer-top">
+    <span class="logo">Aurora</span>
+    <button class="icon-btn" type="button" data-nav-close aria-label="Close menu">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="cart.html">Cart</a>
+    <a href="about.html">About</a>
+  </nav>
+</div>
+
+<div class="wrap page-head">
+  <p class="breadcrumb"><a href="index.html">Home</a> / About</p>
+  <h1>About us</h1>
+</div>
+
+<!-- Story / intro — placeholder copy, replace once the client has a real story -->
+<section class="section" style="padding-top:24px">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <p class="eyebrow">Our story</p>
+        <h2>Placeholder founding story, ready for the real one</h2>
+        <p class="lead">This paragraph is a stand-in for why the brand exists — who started it, what problem it solves, and why someone should care before they check out. Two or three honest sentences here will do more for trust than any amount of styling.</p>
+        <p class="lead">Replace this section with the client's actual story once they've decided what they're selling and why.</p>
+        <a class="btn btn-flare" href="shop.html">Shop the catalog</a>
+      </div>
+      <div class="split-visual" aria-hidden="true">
+        <div class="block" data-about-block></div>
+        <div class="block" data-about-block></div>
+        <div class="block" data-about-block></div>
+        <div class="block" data-about-block></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats — pulled from the placeholder catalog, update once real numbers exist -->
+<section class="wrap">
+  <div class="stats-row">
+    <div class="stat">
+      <p class="stat-number">16+</p>
+      <p class="stat-label">Products</p>
+    </div>
+    <div class="stat">
+      <p class="stat-number">4</p>
+      <p class="stat-label">Categories</p>
+    </div>
+    <div class="stat">
+      <p class="stat-number">2026</p>
+      <p class="stat-label">Founded</p>
+    </div>
+    <div class="stat">
+      <p class="stat-number">Worldwide</p>
+      <p class="stat-label">Shipping</p>
+    </div>
+  </div>
+</section>
+
+<!-- Values — generic placeholders, tune to whatever the client actually stands for -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>What We Stand For</h2>
+      <p>Four placeholder values — swap these for whatever actually differentiates the client's products.</p>
+    </div>
+    <div class="value-grid">
+      <div class="value-card">
+        <div class="icon-circle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.35-9.5-8.5C.5 8 3 4 7 4c2 0 3.5 1 5 3 1.5-2 3-3 5-3 4 0 6.5 4 4.5 8.5C19 16.65 12 21 12 21Z"/></svg>
+        </div>
+        <h3>Thoughtfully made</h3>
+        <p>Placeholder blurb about care and craft — replace with something specific to the product.</p>
+      </div>
+      <div class="value-card">
+        <div class="icon-circle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+        </div>
+        <h3>Built to last</h3>
+        <p>Placeholder blurb about quality and durability — back it up with real specifics.</p>
+      </div>
+      <div class="value-card">
+        <div class="icon-circle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3 4 14h6l-1 7 9-11h-6l1-7Z"/></svg>
+        </div>
+        <h3>Fast &amp; reliable</h3>
+        <p>Placeholder blurb about shipping times — fill in once fulfillment is sorted.</p>
+      </div>
+      <div class="value-card">
+        <div class="icon-circle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5H6l-3 3v-3.6A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+        </div>
+        <h3>Here when you need us</h3>
+        <p>Placeholder blurb about support — swap in real contact channels and hours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="banner">
+      <div>
+        <h2>Like what you see?</h2>
+        <p>The catalog is still placeholder, but the storefront is ready whenever the real products are.</p>
+      </div>
+      <div class="banner-actions">
+        <a class="btn btn-flare" href="shop.html" style="background:var(--white);color:var(--ink);">Shop the catalog</a>
+        <a class="btn btn-ghost-light" href="mailto:hello@example.com">Get in touch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-tagline">Level Up Your<br>Outfits with Aurora</p>
+        <p>Subscribe to our newsletter for news, exclusive offers, and community events. Don't miss updates.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul class="footer-links">
+          <li><a href="shop.html">Accessories</a></li>
+          <li><a href="shop.html">Sneakers</a></li>
+          <li><a href="shop.html">T-Shirts &amp; Pants</a></li>
+          <li><a href="shop.html">Jackets &amp; Blazers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul class="footer-links">
+          <li><a href="#">Support Center</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Troubleshooting</a></li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Compliance</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-wordmark">Aurora<sup>©</sup></div>
+    <div class="wrap">
+      <div class="footer-bottom">
+        <span>© 2026 Aurora. Skeleton site — replace before launch.</span>
+        <span>Built with HTML, CSS &amp; JS — no framework required</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
