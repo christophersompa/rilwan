@@ -10,9 +10,9 @@
      name      - product name
      category  - used for the shop page filters
      price     - number, in whole currency units (e.g. 24.00)
-     image     - URL for the product image. Currently a generated
-                 SVG gradient placeholder via ph(). Replace with the
-                 client's real photography (recommend ~800x900px portrait).
+     image     - path to the product image (white-background PNG at
+                 images/products/<id>.png). Replace each file with the
+                 client's real photography (recommend ~1000x1250px, 4:5 portrait).
      description - shown on the product detail page
      tag       - optional label shown on the card (e.g. "Sale", "New") — leave blank for none
      rating    - 1-5, shown as stars on the card
@@ -143,85 +143,85 @@ function phAvatar(initial) {
 const PRODUCTS = [
   /* ---- Clothing ---- */
   { id: "ankara-maxi-dress",   name: "Ankara Print Maxi Dress",     category: "Clothing",    price: 48.00,
-    image: ph("Ankara Maxi Dress"),
+    image: "images/products/ankara-maxi-dress.png",
     tag: "New", rating: 5, reviews: 184,
     description: "Placeholder copy: a flowing maxi dress cut from vibrant Ankara wax print. Replace with the client's real fabric, sizing, and care details." },
 
   { id: "dashiki-shirt",       name: "Embroidered Dashiki Shirt",   category: "Clothing",    price: 38.00,
-    image: ph("Dashiki Shirt"),
+    image: "images/products/dashiki-shirt.png",
     tag: "", rating: 5, reviews: 327,
     description: "Placeholder copy: a relaxed-fit dashiki with traditional neckline embroidery. Swap for real product details — fabric, fit, and sizing." },
 
   { id: "kente-wrap",          name: "Handwoven Kente Wrap",        category: "Clothing",    price: 65.00,
-    image: ph("Kente Wrap"),
+    image: "images/products/kente-wrap.png",
     tag: "", rating: 5, reviews: 96,
     description: "Placeholder copy: a handwoven Kente cloth wrap in a bold colourway. Replace with the client's real weave, dimensions, and origin." },
 
   { id: "adire-tunic",         name: "Adire Indigo Tunic",          category: "Clothing",    price: 42.00,
-    image: ph("Adire Tunic"),
+    image: "images/products/adire-tunic.png",
     tag: "Sale", rating: 4, reviews: 142,
     description: "Placeholder copy: a hand-dyed adire indigo tunic, each piece a little different. Swap for real materials and sizing." },
 
   /* ---- Food ---- */
   { id: "jollof-spice",        name: "Jollof Rice Spice Blend",     category: "Food",        price: 9.50,
-    image: ph("Jollof Spice"),
+    image: "images/products/jollof-spice.png",
     tag: "Bestseller", rating: 5, reviews: 512,
     description: "Placeholder copy: a ready-mixed jollof seasoning blend. Replace with the client's real ingredients, weight, and allergen info." },
 
   { id: "plantain-chips",      name: "Plantain Chips (Salted)",     category: "Food",        price: 6.00,
-    image: ph("Plantain Chips"),
+    image: "images/products/plantain-chips.png",
     tag: "", rating: 5, reviews: 433,
     description: "Placeholder copy: crisp, lightly salted plantain chips. Swap for real pack size, ingredients, and nutrition details." },
 
   { id: "suya-pepper",         name: "Suya Pepper Mix",             category: "Food",        price: 7.50,
-    image: ph("Suya Pepper"),
+    image: "images/products/suya-pepper.png",
     tag: "", rating: 5, reviews: 218,
     description: "Placeholder copy: a smoky, nutty suya spice rub for grilled meats. Replace with the client's real blend and heat level." },
 
   { id: "zobo-tea",            name: "Hibiscus (Zobo) Tea",         category: "Food",        price: 8.00,
-    image: ph("Zobo Tea"),
+    image: "images/products/zobo-tea.png",
     tag: "New", rating: 4, reviews: 87,
     description: "Placeholder copy: dried hibiscus petals for a tart, ruby-red zobo drink. Swap for real weight, sourcing, and brewing notes." },
 
   /* ---- Skincare ---- */
   { id: "shea-butter",         name: "Raw Unrefined Shea Butter",   category: "Skincare",    price: 14.00,
-    image: ph("Shea Butter"),
+    image: "images/products/shea-butter.png",
     tag: "Bestseller", rating: 5, reviews: 641,
     description: "Placeholder copy: raw, unrefined shea butter for skin and hair. Replace with the client's real sourcing, weight, and ingredients." },
 
   { id: "black-soap",          name: "African Black Soap",          category: "Skincare",    price: 11.00,
-    image: ph("Black Soap"),
+    image: "images/products/black-soap.png",
     tag: "", rating: 5, reviews: 389,
     description: "Placeholder copy: traditional African black soap for daily cleansing. Swap for real ingredients, weight, and usage guidance." },
 
   { id: "baobab-oil",          name: "Baobab Body Oil",             category: "Skincare",    price: 18.00,
-    image: ph("Baobab Oil"),
+    image: "images/products/baobab-oil.png",
     tag: "", rating: 4, reviews: 154,
     description: "Placeholder copy: lightweight baobab seed oil rich in vitamins. Replace with the client's real ingredients and volume." },
 
   { id: "moringa-mask",        name: "Moringa Clay Face Mask",      category: "Skincare",    price: 16.00,
-    image: ph("Moringa Mask"),
+    image: "images/products/moringa-mask.png",
     tag: "New", rating: 4, reviews: 73,
     description: "Placeholder copy: a moringa-and-clay face mask for a weekly refresh. Swap for real ingredients, weight, and directions." },
 
   /* ---- Accessories ---- */
   { id: "waist-beads",         name: "Handmade Waist Beads",        category: "Accessories", price: 12.00,
-    image: ph("Waist Beads"),
+    image: "images/products/waist-beads.png",
     tag: "", rating: 5, reviews: 201,
     description: "Placeholder copy: handmade glass waist beads on an adjustable strand. Replace with the client's real materials and sizing." },
 
   { id: "gele-headwrap",       name: "Ankara Headwrap (Gele)",      category: "Accessories", price: 22.00,
-    image: ph("Gele Headwrap"),
+    image: "images/products/gele-headwrap.png",
     tag: "", rating: 5, reviews: 176,
     description: "Placeholder copy: a stiffened Ankara gele headwrap that holds its shape. Swap for real fabric, length, and styling notes." },
 
   { id: "cowrie-necklace",     name: "Cowrie Shell Necklace",       category: "Accessories", price: 28.00,
-    image: ph("Cowrie Necklace"),
+    image: "images/products/cowrie-necklace.png",
     tag: "Sale", rating: 4, reviews: 118,
     description: "Placeholder copy: a beaded necklace finished with natural cowrie shells. Replace with the client's real materials and length." },
 
   { id: "raffia-tote",         name: "Woven Raffia Tote",           category: "Accessories", price: 34.00,
-    image: ph("Raffia Tote"),
+    image: "images/products/raffia-tote.png",
     tag: "", rating: 5, reviews: 95,
     description: "Placeholder copy: a hand-woven raffia tote with leather handles. Swap for real dimensions, materials, and capacity." }
 ];
