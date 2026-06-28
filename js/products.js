@@ -136,86 +136,94 @@ function phAvatar(initial) {
   return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
 }
 
+/* PLACEHOLDER CATALOG — Bésa (African goods)
+   These 16 products are realistic stand-ins for demoing the storefront.
+   Names/prices/descriptions are illustrative — replace each entry with the
+   client's real products, prices, and photography once supplied. */
 const PRODUCTS = [
-  { id: "product-01", name: "Classic Denim Jacket",       category: "Outerwear",   price: 75.00,
-    image: ph("Denim Jacket"),
-    tag: "", rating: 5, reviews: 238,
-    description: "Placeholder description. Swap this copy for real product details — materials, fit, what makes it worth buying." },
+  /* ---- Clothing ---- */
+  { id: "ankara-maxi-dress",   name: "Ankara Print Maxi Dress",     category: "Clothing",    price: 48.00,
+    image: ph("Ankara Maxi Dress"),
+    tag: "New", rating: 5, reviews: 184,
+    description: "Placeholder copy: a flowing maxi dress cut from vibrant Ankara wax print. Replace with the client's real fabric, sizing, and care details." },
 
-  { id: "product-02", name: "Slim Fit Chinos",             category: "Outerwear",   price: 50.00,
-    image: ph("Slim Chinos"),
-    tag: "Sale", rating: 5, reviews: 839,
-    description: "Placeholder description. Swap this copy for real product details — materials, fit, what makes it worth buying." },
+  { id: "dashiki-shirt",       name: "Embroidered Dashiki Shirt",   category: "Clothing",    price: 38.00,
+    image: ph("Dashiki Shirt"),
+    tag: "", rating: 5, reviews: 327,
+    description: "Placeholder copy: a relaxed-fit dashiki with traditional neckline embroidery. Swap for real product details — fabric, fit, and sizing." },
 
-  { id: "product-03", name: "Floral Summer Dress",         category: "Outerwear",   price: 65.00,
-    image: ph("Summer Dress"),
-    tag: "", rating: 5, reviews: 358,
-    description: "Placeholder description. Swap this copy for real product details — materials, fit, what makes it worth buying." },
+  { id: "kente-wrap",          name: "Handwoven Kente Wrap",        category: "Clothing",    price: 65.00,
+    image: ph("Kente Wrap"),
+    tag: "", rating: 5, reviews: 96,
+    description: "Placeholder copy: a handwoven Kente cloth wrap in a bold colourway. Replace with the client's real weave, dimensions, and origin." },
 
-  { id: "product-04", name: "Essential Crewneck Sweater",  category: "Outerwear",   price: 45.00,
-    image: ph("Crewneck Sweater"),
-    tag: "", rating: 4, reviews: 987,
-    description: "Placeholder description. Swap this copy for real product details — materials, fit, what makes it worth buying." },
+  { id: "adire-tunic",         name: "Adire Indigo Tunic",          category: "Clothing",    price: 42.00,
+    image: ph("Adire Tunic"),
+    tag: "Sale", rating: 4, reviews: 142,
+    description: "Placeholder copy: a hand-dyed adire indigo tunic, each piece a little different. Swap for real materials and sizing." },
 
-  { id: "product-05", name: "Linen Button-Down Shirt",     category: "Tops",        price: 58.00,
-    image: ph("Linen Shirt"),
-    tag: "New", rating: 5, reviews: 142,
-    description: "Placeholder description. Swap this copy for real product details — materials, fit, what makes it worth buying." },
+  /* ---- Food ---- */
+  { id: "jollof-spice",        name: "Jollof Rice Spice Blend",     category: "Food",        price: 9.50,
+    image: ph("Jollof Spice"),
+    tag: "Bestseller", rating: 5, reviews: 512,
+    description: "Placeholder copy: a ready-mixed jollof seasoning blend. Replace with the client's real ingredients, weight, and allergen info." },
 
-  { id: "product-06", name: "Vintage Graphic Tee",         category: "Tops",        price: 28.00,
-    image: ph("Graphic Tee"),
-    tag: "", rating: 4, reviews: 412,
-    description: "Placeholder description. Swap this copy for real product details — materials, fit, what makes it worth buying." },
+  { id: "plantain-chips",      name: "Plantain Chips (Salted)",     category: "Food",        price: 6.00,
+    image: ph("Plantain Chips"),
+    tag: "", rating: 5, reviews: 433,
+    description: "Placeholder copy: crisp, lightly salted plantain chips. Swap for real pack size, ingredients, and nutrition details." },
 
-  { id: "product-07", name: "Oversized Wool Coat",         category: "Tops",        price: 165.00,
-    image: ph("Wool Coat"),
-    tag: "", rating: 5, reviews: 76,
-    description: "Placeholder description. Swap this copy for real product details — materials, fit, what makes it worth buying." },
+  { id: "suya-pepper",         name: "Suya Pepper Mix",             category: "Food",        price: 7.50,
+    image: ph("Suya Pepper"),
+    tag: "", rating: 5, reviews: 218,
+    description: "Placeholder copy: a smoky, nutty suya spice rub for grilled meats. Replace with the client's real blend and heat level." },
 
-  { id: "product-08", name: "Striped Cotton Polo",         category: "Tops",        price: 38.00,
-    image: ph("Cotton Polo"),
-    tag: "Sale", rating: 4, reviews: 203,
-    description: "Placeholder description. Swap this copy for real product details — materials, fit, what makes it worth buying." },
+  { id: "zobo-tea",            name: "Hibiscus (Zobo) Tea",         category: "Food",        price: 8.00,
+    image: ph("Zobo Tea"),
+    tag: "New", rating: 4, reviews: 87,
+    description: "Placeholder copy: dried hibiscus petals for a tart, ruby-red zobo drink. Swap for real weight, sourcing, and brewing notes." },
 
-  { id: "product-09", name: "High-Waist Mom Jeans",        category: "Bottoms",     price: 72.00,
-    image: ph("Mom Jeans"),
-    tag: "", rating: 5, reviews: 521,
-    description: "Placeholder description. Swap this copy for real product details — materials, fit, what makes it worth buying." },
+  /* ---- Skincare ---- */
+  { id: "shea-butter",         name: "Raw Unrefined Shea Butter",   category: "Skincare",    price: 14.00,
+    image: ph("Shea Butter"),
+    tag: "Bestseller", rating: 5, reviews: 641,
+    description: "Placeholder copy: raw, unrefined shea butter for skin and hair. Replace with the client's real sourcing, weight, and ingredients." },
 
-  { id: "product-10", name: "Tailored Black Trousers",     category: "Bottoms",     price: 88.00,
-    image: ph("Tailored Trousers"),
-    tag: "", rating: 5, reviews: 167,
-    description: "Placeholder description. Swap this copy for real product details — materials, fit, what makes it worth buying." },
+  { id: "black-soap",          name: "African Black Soap",          category: "Skincare",    price: 11.00,
+    image: ph("Black Soap"),
+    tag: "", rating: 5, reviews: 389,
+    description: "Placeholder copy: traditional African black soap for daily cleansing. Swap for real ingredients, weight, and usage guidance." },
 
-  { id: "product-11", name: "Pleated Midi Skirt",          category: "Bottoms",     price: 54.00,
-    image: ph("Midi Skirt"),
-    tag: "New", rating: 4, reviews: 89,
-    description: "Placeholder description. Swap this copy for real product details — materials, fit, what makes it worth buying." },
+  { id: "baobab-oil",          name: "Baobab Body Oil",             category: "Skincare",    price: 18.00,
+    image: ph("Baobab Oil"),
+    tag: "", rating: 4, reviews: 154,
+    description: "Placeholder copy: lightweight baobab seed oil rich in vitamins. Replace with the client's real ingredients and volume." },
 
-  { id: "product-12", name: "Cargo Utility Pants",         category: "Bottoms",     price: 68.00,
-    image: ph("Cargo Pants"),
-    tag: "", rating: 4, reviews: 354,
-    description: "Placeholder description. Swap this copy for real product details — materials, fit, what makes it worth buying." },
+  { id: "moringa-mask",        name: "Moringa Clay Face Mask",      category: "Skincare",    price: 16.00,
+    image: ph("Moringa Mask"),
+    tag: "New", rating: 4, reviews: 73,
+    description: "Placeholder copy: a moringa-and-clay face mask for a weekly refresh. Swap for real ingredients, weight, and directions." },
 
-  { id: "product-13", name: "Canvas Backpack",             category: "Accessories", price: 62.00,
-    image: ph("Canvas Backpack"),
-    tag: "", rating: 5, reviews: 298,
-    description: "Placeholder description. Swap this copy for real product details — materials, fit, what makes it worth buying." },
+  /* ---- Accessories ---- */
+  { id: "waist-beads",         name: "Handmade Waist Beads",        category: "Accessories", price: 12.00,
+    image: ph("Waist Beads"),
+    tag: "", rating: 5, reviews: 201,
+    description: "Placeholder copy: handmade glass waist beads on an adjustable strand. Replace with the client's real materials and sizing." },
 
-  { id: "product-14", name: "Round Frame Sunglasses",      category: "Accessories", price: 32.00,
-    image: ph("Sunglasses"),
-    tag: "Sale", rating: 4, reviews: 145,
-    description: "Placeholder description. Swap this copy for real product details — materials, fit, what makes it worth buying." },
+  { id: "gele-headwrap",       name: "Ankara Headwrap (Gele)",      category: "Accessories", price: 22.00,
+    image: ph("Gele Headwrap"),
+    tag: "", rating: 5, reviews: 176,
+    description: "Placeholder copy: a stiffened Ankara gele headwrap that holds its shape. Swap for real fabric, length, and styling notes." },
 
-  { id: "product-15", name: "Minimal Leather Watch",       category: "Accessories", price: 128.00,
-    image: ph("Leather Watch"),
-    tag: "", rating: 5, reviews: 412,
-    description: "Placeholder description. Swap this copy for real product details — materials, fit, what makes it worth buying." },
+  { id: "cowrie-necklace",     name: "Cowrie Shell Necklace",       category: "Accessories", price: 28.00,
+    image: ph("Cowrie Necklace"),
+    tag: "Sale", rating: 4, reviews: 118,
+    description: "Placeholder copy: a beaded necklace finished with natural cowrie shells. Replace with the client's real materials and length." },
 
-  { id: "product-16", name: "Wide-Brim Sun Hat",           category: "Accessories", price: 42.00,
-    image: ph("Sun Hat"),
-    tag: "", rating: 4, reviews: 73,
-    description: "Placeholder description. Swap this copy for real product details — materials, fit, what makes it worth buying." }
+  { id: "raffia-tote",         name: "Woven Raffia Tote",           category: "Accessories", price: 34.00,
+    image: ph("Raffia Tote"),
+    tag: "", rating: 5, reviews: 95,
+    description: "Placeholder copy: a hand-woven raffia tote with leather handles. Swap for real dimensions, materials, and capacity." }
 ];
 
 /* All distinct categories, derived automatically — used to build shop.html filter pills */
@@ -241,8 +249,8 @@ const SITE_IMAGES = {
 
   /* category tile imagery */
   catNewArrivals: ph("New Arrivals", { w: 900, h: 1100 }),
-  catOuterwear:   ph("Outerwear",    { w: 600, h: 600 }),
-  catTops:        ph("Tops",         { w: 600, h: 600 }),
-  catBottoms:     ph("Bottoms",      { w: 600, h: 600 }),
+  catClothing:    ph("Clothing",     { w: 600, h: 600 }),
+  catFood:        ph("Food",         { w: 600, h: 600 }),
+  catSkincare:    ph("Skincare",     { w: 600, h: 600 }),
   catAccessories: ph("Accessories",  { w: 600, h: 600 })
 };
