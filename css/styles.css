@@ -1,27 +1,27 @@
 /* ============================================
-   BÉSA — design tokens (Frolax-style redesign)
+   BÉSA — design tokens (Lensora-style blue redesign)
    Swap these values to re-skin the whole site.
    ============================================ */
 :root {
   /* core palette */
-  --orange:        #F47B20;
-  --orange-deep:   #D86515;
-  --orange-bright: #FF8B2D;
-  --orange-soft:   #FFF1E5;
-  --yellow:        #F5C842;
-  --yellow-deep:   #E6B025;
-  --yellow-soft:   #FFF6D6;
+  --blue:        #1F63E8;
+  --blue-deep:   #123FA6;
+  --blue-bright: #3B82F6;
+  --blue-soft:   #E3EEFC;
+  --blue-accent:        #BBD3F7;
+  --blue-accent-deep:   #1F63E8;
+  --blue-accent-soft:   #EAF2FD;
 
   /* neutrals */
-  --ink:        #1A1A1A;
-  --ink-2:      #2E2E2E;
-  --ink-soft:   #6B6B6B;
-  --ink-faint:  #9A9A9A;
+  --ink:        #0B1E45;
+  --ink-2:      #15315F;
+  --ink-soft:   #56688E;
+  --ink-faint:  #93A2BE;
   --white:      #FFFFFF;
-  --cream:      #FAF6F0;
-  --cream-deep: #F0EAE0;
-  --line:       #ECE8E2;
-  --line-soft:  #F4F0EA;
+  --sky:      #E8F1FC;
+  --sky-deep: #D6E6FB;
+  --line:       #DCE7F5;
+  --line-soft:  #EDF3FC;
 
   --radius-sm: 8px;
   --radius-md: 14px;
@@ -44,7 +44,7 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  background: var(--white);
+  background: var(--sky);
   color: var(--ink);
   font-family: var(--font-body);
   font-size: 15px;
@@ -83,7 +83,7 @@ p { margin: 0; }
 }
 
 a:focus-visible, button:focus-visible, input:focus-visible {
-  outline: 2px solid var(--orange);
+  outline: 2px solid var(--blue);
   outline-offset: 3px;
 }
 
@@ -115,12 +115,12 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 
 .btn-primary,
 .btn-flare {
-  background: var(--orange);
+  background: var(--blue);
   color: var(--white);
   box-shadow: var(--shadow-soft);
 }
 .btn-primary:hover,
-.btn-flare:hover { background: var(--orange-deep); box-shadow: var(--shadow-card); }
+.btn-flare:hover { background: var(--blue-deep); box-shadow: var(--shadow-card); }
 
 .btn-ghost {
   background: transparent;
@@ -156,7 +156,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 }
 .marquee__track span em {
   font-style: normal;
-  color: var(--orange-bright);
+  color: var(--blue-bright);
 }
 @keyframes marquee {
   from { transform: translateX(0); }
@@ -197,9 +197,9 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   display: inline-block;
   width: 22px;
   height: 22px;
-  background: var(--orange);
+  background: var(--blue);
   border-radius: 50%;
-  box-shadow: -10px 0 0 var(--orange);
+  box-shadow: -10px 0 0 var(--blue);
   clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
 }
 .nav-links {
@@ -208,7 +208,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   list-style: none;
   margin: 0;
   padding: 6px;
-  background: var(--cream);
+  background: var(--sky);
   border-radius: var(--radius-pill);
 }
 .nav-links a {
@@ -221,7 +221,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 }
 .nav-links a:hover { color: var(--ink); }
 .nav-links a.is-active {
-  background: var(--orange);
+  background: var(--blue);
   color: var(--white);
 }
 
@@ -238,7 +238,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: var(--cream);
+  background: var(--sky);
   border: none;
   cursor: pointer;
   color: var(--ink);
@@ -253,7 +253,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   height: 19px;
   padding: 0 5px;
   border-radius: var(--radius-pill);
-  background: var(--orange);
+  background: var(--blue);
   color: var(--white);
   font-size: 10px;
   font-weight: 700;
@@ -271,7 +271,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
     width: 40px; height: 40px;
     align-items: center; justify-content: center;
     border-radius: 50%;
-    background: var(--cream);
+    background: var(--sky);
     border: none;
     color: var(--ink);
     cursor: pointer;
@@ -283,166 +283,131 @@ a:focus-visible, button:focus-visible, input:focus-visible {
    ============================================ */
 .hero {
   position: relative;
-  margin: 20px 28px 0;
-  border-radius: var(--radius-xl);
-  background: linear-gradient(135deg, var(--orange) 0%, var(--orange-bright) 100%);
-  overflow: hidden;
-  padding: 64px 56px;
-  min-height: 500px;
-}
-.hero::after {
-  /* soft sun glow in top-right corner */
-  content: "";
-  position: absolute;
-  top: -120px;
-  right: -120px;
-  width: 380px;
-  height: 380px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 215, 130, 0.5) 0%, transparent 70%);
-  pointer-events: none;
+  margin: 26px 0 0;
+  padding: 16px 0 8px;
 }
 .hero .wrap {
   position: relative;
   z-index: 1;
-  max-width: none;
-  padding: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 1.02fr 1fr;
+  gap: 52px;
   align-items: center;
-  min-height: 420px;
+  min-height: 460px;
 }
-.hero-text { color: var(--white); }
+.hero-text { color: var(--ink); }
+.hero-badge-row { display: flex; align-items: center; gap: 10px; margin-bottom: 24px; }
 .hero h1 {
-  font-size: clamp(48px, 6.5vw, 92px);
-  color: var(--white);
-  font-weight: 700;
-  line-height: 0.95;
-  letter-spacing: -0.03em;
-}
-.hero h1 .highlight {
-  display: block;
-  font-style: italic;
+  font-size: clamp(46px, 6.4vw, 88px);
+  color: var(--ink);
   font-weight: 600;
+  line-height: 0.96;
+  letter-spacing: -0.025em;
 }
+.hero h1 .highlight { display: block; color: var(--blue); }
 .hero p.lead {
   margin-top: 22px;
-  max-width: 42ch;
-  font-size: 15px;
-  color: rgba(255, 255, 255, 0.88);
-  line-height: 1.55;
+  max-width: 44ch;
+  font-size: 15.5px;
+  color: var(--ink-soft);
+  line-height: 1.6;
 }
-.hero-actions {
+.hero-buy {
   margin-top: 30px;
   display: flex;
-  gap: 12px;
+  align-items: center;
+  gap: 24px;
   flex-wrap: wrap;
 }
-.hero .btn-flare {
-  background: var(--white);
-  color: var(--ink);
-}
-.hero .btn-flare:hover { background: var(--ink); color: var(--white); }
-.hero .btn-ghost {
-  border-color: rgba(255, 255, 255, 0.5);
-  color: var(--white);
-}
-.hero .btn-ghost:hover { background: var(--white); color: var(--ink); border-color: var(--white); }
+.hero-buy .from { font-size: 13px; color: var(--ink-soft); letter-spacing: .02em; }
+.hero-buy .from strong { display: block; margin-top: 2px; font-size: 22px; color: var(--ink); font-family: var(--font-display); font-weight: 600; }
+.hero .btn-flare { background: var(--ink); color: var(--white); }
+.hero .btn-flare:hover { background: var(--blue); color: var(--white); }
 .hero-note {
-  margin-top: 22px;
+  margin-top: 26px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.7);
-  letter-spacing: 0.04em;
+  color: var(--ink-faint);
+  letter-spacing: 0.03em;
 }
 
 /* hero visual side */
-.hero-visual {
-  position: relative;
-  height: 100%;
-  min-height: 420px;
-}
+.hero-visual { position: relative; height: 100%; min-height: 460px; }
 .hero-image {
   position: absolute;
   inset: 0;
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-xl);
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--blue-accent);
 }
-.hero-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-/* small floating product card bottom-left */
+.hero-image img { width: 100%; height: 100%; object-fit: cover; }
 .hero-card {
   position: absolute;
-  bottom: 18px;
-  left: -28px;
+  bottom: 20px;
+  left: -26px;
   z-index: 2;
   background: var(--white);
   border-radius: var(--radius-md);
   padding: 12px;
-  width: 150px;
+  width: 168px;
   box-shadow: var(--shadow-pop);
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
 }
 .hero-card-image {
   width: 100%;
-  aspect-ratio: 1.2 / 1;
+  aspect-ratio: 1 / 1;
   border-radius: var(--radius-sm);
-  background: var(--cream);
+  background: var(--sky);
   overflow: hidden;
 }
-.hero-card-image img { width: 100%; height: 100%; }
-.hero-card .meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2px;
-}
+.hero-card-image img { width: 100%; height: 100%; object-fit: cover; }
+.hero-card .meta { display: flex; justify-content: space-between; align-items: center; padding: 0 2px; }
 .hero-card .meta h3 { font-size: 12px; color: var(--ink); font-weight: 600; font-family: var(--font-body); }
-.hero-card .meta .price { font-size: 12px; font-weight: 700; color: var(--orange); }
-
-/* hero ratings badge top-right */
+.hero-card .meta .price { font-size: 12px; font-weight: 700; color: var(--blue); }
 .hero-rating {
   position: absolute;
   top: 22px;
-  right: 22px;
+  right: -18px;
   z-index: 2;
   background: var(--white);
   border-radius: var(--radius-md);
-  padding: 14px 16px;
-  max-width: 200px;
+  padding: 14px 18px;
+  max-width: 210px;
   box-shadow: var(--shadow-pop);
 }
-.hero-rating .stars {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-bottom: 6px;
-}
-.hero-rating .stars-inner {
-  display: flex;
-  gap: 1px;
-  color: var(--orange);
-  font-size: 11px;
-}
-.hero-rating .stars-label {
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--ink);
-}
-.hero-rating p {
-  font-size: 11px;
-  color: var(--ink-soft);
-  line-height: 1.4;
-}
-.hero-progress { display: none; } /* legacy element from old design */
+.hero-rating .stars { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+.hero-rating .stars-inner { display: flex; gap: 1px; color: var(--blue); font-size: 12px; }
+.hero-rating .stars-label { font-size: 13px; font-weight: 700; color: var(--ink); }
+.hero-rating p { font-size: 11.5px; color: var(--ink-soft); line-height: 1.45; }
+.hero-progress { display: none; }
 .hero-card-back  { display: none; }
 .hero-badge      { display: none; }
+
+/* Lensora-style pill badge */
+.pill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+  padding: 8px 15px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink);
+  box-shadow: var(--shadow-soft);
+}
+.pill-badge .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--blue); }
+
+@media (max-width: 900px) {
+  .hero .wrap { grid-template-columns: 1fr; gap: 30px; min-height: 0; }
+  .hero-visual { min-height: 360px; }
+  .hero-rating { right: 10px; }
+  .hero-card { left: 10px; }
+}
 
 @media (max-width: 900px) {
   .hero { padding: 40px 28px; margin: 12px; }
@@ -468,7 +433,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   align-items: center;
   gap: 14px;
   padding: 18px 20px;
-  background: var(--cream);
+  background: var(--sky);
   border-radius: var(--radius-md);
 }
 .trust-icon {
@@ -479,7 +444,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--orange);
+  color: var(--blue);
   flex-shrink: 0;
 }
 .trust-icon svg { width: 20px; height: 20px; }
@@ -530,7 +495,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   border-bottom: 1px solid var(--ink);
   padding-bottom: 2px;
 }
-.section-link:hover { color: var(--orange); border-color: var(--orange); }
+.section-link:hover { color: var(--blue); border-color: var(--blue); }
 
 /* ============================================
    Categories — asymmetric mosaic
@@ -587,7 +552,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: var(--orange);
+  background: var(--blue);
   color: var(--white);
   display: inline-flex;
   align-items: center;
@@ -624,7 +589,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 .product-media {
   position: relative;
   aspect-ratio: 1 / 1.1;
-  background: var(--cream);
+  background: var(--sky);
   border-radius: var(--radius-md);
   overflow: hidden;
 }
@@ -654,8 +619,8 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   box-shadow: var(--shadow-soft);
   transition: color 0.18s ease, background 0.18s ease;
 }
-.wishlist-btn:hover { color: var(--orange); }
-.wishlist-btn.is-active { color: var(--orange); }
+.wishlist-btn:hover { color: var(--blue); }
+.wishlist-btn.is-active { color: var(--blue); }
 .wishlist-btn svg { width: 16px; height: 16px; }
 
 /* sale tag top-left */
@@ -664,7 +629,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   top: 12px;
   left: 12px;
   z-index: 2;
-  background: var(--orange);
+  background: var(--blue);
   color: var(--white);
   font-size: 10px;
   font-weight: 700;
@@ -698,7 +663,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   z-index: 2;
 }
 .product-card:hover .quick-shop { opacity: 1; transform: translateY(0); }
-.quick-shop:hover { background: var(--orange); color: var(--white); }
+.quick-shop:hover { background: var(--blue); color: var(--white); }
 .quick-shop svg { width: 14px; height: 14px; }
 
 .product-card .body {
@@ -717,7 +682,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   color: var(--ink);
   letter-spacing: 0;
 }
-.product-card h3 a:hover { color: var(--orange); }
+.product-card h3 a:hover { color: var(--blue); }
 
 .product-card .rating-row {
   display: flex;
@@ -725,7 +690,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   gap: 6px;
 }
 .product-card .rating-stars {
-  color: var(--orange);
+  color: var(--blue);
   font-size: 11px;
   letter-spacing: 1px;
 }
@@ -756,7 +721,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   line-height: 1;
   transition: background 0.18s ease;
 }
-.product-card .add-btn:hover { background: var(--orange); }
+.product-card .add-btn:hover { background: var(--blue); }
 .product-card a.card-link { color: inherit; display: block; }
 
 @media (max-width: 980px) {
@@ -768,15 +733,15 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 
 /* legacy swatch backgrounds — kept so older markup still renders something useful */
 .bg-teal,
-.bg-sage { background: var(--orange-soft); }
-.bg-lime { background: var(--yellow-soft); }
-.bg-ink  { background: var(--cream-deep); }
+.bg-sage { background: var(--blue-soft); }
+.bg-lime { background: var(--blue-accent-soft); }
+.bg-ink  { background: var(--sky-deep); }
 
 /* ============================================
    Featured — yellow section with giant brand wordmark
    ============================================ */
 .featured-section {
-  background: var(--yellow);
+  background: var(--blue-accent);
   margin: 28px;
   border-radius: var(--radius-xl);
   position: relative;
@@ -842,7 +807,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   gap: 18px;
 }
 .featured-badge {
-  background: var(--orange);
+  background: var(--blue);
   color: var(--white);
   border-radius: 50%;
   width: 120px;
@@ -891,7 +856,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 .featured-product-card .meta .price {
   font-size: 12px;
   font-weight: 700;
-  color: var(--orange);
+  color: var(--blue);
   margin-top: 2px;
 }
 
@@ -1002,7 +967,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background: var(--orange);
+  background: var(--blue);
   border: none;
   color: var(--white);
   display: inline-flex;
@@ -1051,7 +1016,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   align-items: center;
   justify-content: center;
 }
-.testimonial-nav button:hover { background: var(--orange); color: var(--white); border-color: var(--orange); }
+.testimonial-nav button:hover { background: var(--blue); color: var(--white); border-color: var(--blue); }
 
 .testimonial-grid {
   display: grid;
@@ -1060,7 +1025,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 }
 .testimonial-card {
   padding: 26px;
-  background: var(--cream);
+  background: var(--sky);
   border-radius: var(--radius-md);
 }
 .testimonial-card p {
@@ -1081,7 +1046,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: var(--cream-deep);
+  background: var(--sky-deep);
   overflow: hidden;
   flex-shrink: 0;
 }
@@ -1099,7 +1064,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   gap: 10px;
   margin-top: 3px;
 }
-.testimonial-stars { color: var(--orange); letter-spacing: 1px; }
+.testimonial-stars { color: var(--blue); letter-spacing: 1px; }
 
 @media (max-width: 860px) {
   .testimonial-grid { grid-template-columns: 1fr; }
@@ -1111,7 +1076,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 .fresh-looks {
   margin: 28px;
   border-radius: var(--radius-xl);
-  background: var(--orange-soft);
+  background: var(--blue-soft);
   overflow: hidden;
   position: relative;
   display: grid;
@@ -1166,7 +1131,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 .cta-section {
   margin: 28px;
   border-radius: var(--radius-xl);
-  background: var(--orange-soft);
+  background: var(--blue-soft);
   overflow: hidden;
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
@@ -1213,7 +1178,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 .banner-form button {
   border: none;
   border-radius: var(--radius-pill);
-  background: var(--orange);
+  background: var(--blue);
   color: var(--white);
   padding: 12px 26px;
   font-weight: 600;
@@ -1221,7 +1186,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   font-size: 13px;
   transition: background 0.18s ease;
 }
-.banner-form button:hover { background: var(--orange-deep); }
+.banner-form button:hover { background: var(--blue-deep); }
 
 .cta-image {
   position: relative;
@@ -1240,7 +1205,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 /* legacy .banner (still used on About page) */
 .banner {
   border-radius: var(--radius-lg);
-  background: var(--orange);
+  background: var(--blue);
   color: var(--white);
   padding: 48px;
   display: grid;
@@ -1290,7 +1255,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 .footer-grid p { color: rgba(255,255,255,0.6); font-size: 13px; max-width: 32ch; }
 .footer-links { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
 .footer-links a { font-size: 13px; color: rgba(255,255,255,0.65); transition: color 0.15s ease; }
-.footer-links a:hover { color: var(--orange-bright); }
+.footer-links a:hover { color: var(--blue-bright); }
 
 .footer-bottom {
   padding: 20px 0;
@@ -1313,7 +1278,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   font-size: clamp(80px, 24vw, 360px);
   line-height: 0.85;
   letter-spacing: -0.05em;
-  color: var(--orange);
+  color: var(--blue);
   padding: 20px 0 0;
   user-select: none;
   overflow: hidden;
@@ -1353,7 +1318,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   text-transform: uppercase;
 }
 .breadcrumb a { color: var(--ink-soft); }
-.breadcrumb a:hover { color: var(--orange); }
+.breadcrumb a:hover { color: var(--blue); }
 
 /* ============================================
    Filter bar (shop page)
@@ -1378,8 +1343,8 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 }
 .filter-pill:hover { color: var(--ink); border-color: var(--ink); }
 .filter-pill.is-active {
-  background: var(--orange);
-  border-color: var(--orange);
+  background: var(--blue);
+  border-color: var(--blue);
   color: var(--white);
 }
 
@@ -1400,7 +1365,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   display: inline-block;
   font-size: 11px;
   font-weight: 700;
-  color: var(--orange);
+  color: var(--blue);
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
@@ -1443,7 +1408,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   color: var(--ink);
   transition: background 0.15s ease;
 }
-.qty-stepper button:hover { background: var(--cream); }
+.qty-stepper button:hover { background: var(--sky); }
 .qty-stepper span { width: 36px; text-align: center; font-weight: 600; font-size: 14px; }
 .product-detail .btn { padding: 13px 32px; }
 
@@ -1511,7 +1476,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   margin-top: 6px;
   padding: 0;
 }
-.cart-line .remove:hover { color: var(--orange); }
+.cart-line .remove:hover { color: var(--blue); }
 .cart-line .line-price { font-weight: 700; min-width: 70px; text-align: right; font-size: 15px; }
 
 .summary-card {
@@ -1533,23 +1498,23 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 .summary-row.total {
   font-size: 18px;
   font-weight: 700;
-  color: var(--orange-bright);
+  color: var(--blue-bright);
   padding-top: 14px;
   border-top: 1px solid rgba(255,255,255,0.18);
   margin-top: 6px;
 }
 .summary-card .btn-flare {
-  background: var(--orange);
+  background: var(--blue);
   color: var(--white);
 }
-.summary-card .btn-flare:hover { background: var(--orange-deep); }
+.summary-card .btn-flare:hover { background: var(--blue-deep); }
 
 .empty-cart {
   text-align: center;
   padding: 80px 20px;
   color: var(--ink-soft);
 }
-.empty-cart svg { margin: 0 auto 18px; width: 64px; opacity: 0.4; color: var(--orange); }
+.empty-cart svg { margin: 0 auto 18px; width: 64px; opacity: 0.4; color: var(--blue); }
 
 @media (max-width: 860px) {
   .cart-layout { grid-template-columns: 1fr; }
@@ -1590,9 +1555,9 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 
 /* About-page color-block fills replaced with photos via inline style; defaults below */
 .split-visual .bg-teal,
-.split-visual .bg-sage { background-color: var(--orange-soft); }
-.split-visual .bg-lime { background-color: var(--yellow-soft); }
-.split-visual .bg-ink  { background-color: var(--cream-deep); }
+.split-visual .bg-sage { background-color: var(--blue-soft); }
+.split-visual .bg-lime { background-color: var(--blue-accent-soft); }
+.split-visual .bg-ink  { background-color: var(--sky-deep); }
 
 @media (max-width: 860px) {
   .split { grid-template-columns: 1fr; gap: 30px; }
@@ -1609,7 +1574,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   gap: 16px;
 }
 .value-card {
-  background: var(--cream);
+  background: var(--sky);
   border-radius: var(--radius-md);
   padding: 28px;
 }
@@ -1621,7 +1586,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   align-items: center;
   justify-content: center;
   margin-bottom: 18px;
-  background: var(--orange);
+  background: var(--blue);
   color: var(--white);
 }
 .value-card .icon-circle svg { width: 20px; height: 20px; stroke: currentColor !important; color: var(--white); }
@@ -1629,7 +1594,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 .value-card .icon-circle.bg-teal,
 .value-card .icon-circle.bg-sage,
 .value-card .icon-circle.bg-lime,
-.value-card .icon-circle.bg-ink { background: var(--orange); }
+.value-card .icon-circle.bg-ink { background: var(--blue); }
 .value-card .icon-circle.bg-lime svg,
 .value-card .icon-circle.bg-ink svg { stroke: var(--white) !important; }
 .value-card h3 { font-size: 16px; margin-bottom: 8px; font-family: var(--font-body); font-weight: 700; }
@@ -1722,21 +1687,21 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   height: 34px;
   border-radius: 50%;
   border: none;
-  background: var(--cream);
+  background: var(--sky);
   color: var(--ink);
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.promo-close:hover { background: var(--orange); color: var(--white); }
+.promo-close:hover { background: var(--blue); color: var(--white); }
 .promo-badge {
   display: inline-flex;
   padding: 6px 14px;
   margin-bottom: 16px;
   border-radius: var(--radius-pill);
-  background: var(--orange-soft);
-  color: var(--orange-deep);
+  background: var(--blue-soft);
+  color: var(--blue-deep);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -1763,23 +1728,23 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   font-family: var(--font-body);
   outline: none;
 }
-.promo-form input:focus { border-color: var(--orange); }
+.promo-form input:focus { border-color: var(--blue); }
 .promo-form button {
   height: 48px;
   border: none;
   border-radius: var(--radius-pill);
-  background: var(--orange);
+  background: var(--blue);
   color: var(--white);
   font-weight: 600;
   font-size: 14px;
   cursor: pointer;
 }
-.promo-form button:hover { background: var(--orange-deep); }
+.promo-form button:hover { background: var(--blue-deep); }
 .promo-success {
   margin-top: 22px;
   font-size: 14px;
   font-weight: 600;
-  color: var(--orange);
+  color: var(--blue);
 }
 .promo-dismiss {
   display: block;
