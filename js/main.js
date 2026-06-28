@@ -89,9 +89,9 @@ function renderCategoryTiles(containerId) {
     ...CATEGORIES.map(cat => ({
       label: cat,
       image: ({
-        Outerwear:   SITE_IMAGES.catOuterwear,
-        Tops:        SITE_IMAGES.catTops,
-        Bottoms:     SITE_IMAGES.catBottoms,
+        Clothing:    SITE_IMAGES.catClothing,
+        Food:        SITE_IMAGES.catFood,
+        Skincare:    SITE_IMAGES.catSkincare,
         Accessories: SITE_IMAGES.catAccessories
       })[cat] || SITE_IMAGES.catNewArrivals,
       href: `shop.html?category=${encodeURIComponent(cat)}`
