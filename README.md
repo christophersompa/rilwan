@@ -1,4 +1,4 @@
-# Aurora — storefront template
+# Bésa — storefront
 
 A small, dependency-free storefront front-end built with plain **HTML, CSS, and JavaScript** — no build step, no framework. It's a *skeleton*: the layout, cart, and product rendering are fully wired up, so launching a real store is mostly a matter of swapping in the client's brand name, palette, and product catalog.
 
@@ -44,7 +44,7 @@ It's static — no install or build required. Either:
 ## Customizing for a real store
 
 1. **Products** — edit `js/products.js`. It's the only file you need to touch to populate the catalog; each entry documents its fields (name, category, price, image, rating, etc.). Images currently use generated SVG gradient placeholders — replace the `image` values with real photography (~800×900px portrait recommended).
-2. **Branding** — replace the "Aurora" name in the HTML and the color palette / fonts in `css/styles.css`.
+2. **Branding** — the brand name "Bésa" appears in the HTML (logo, titles, footer); tune the color palette / fonts in `css/styles.css`.
 3. **Copy** — swap the placeholder marketing copy throughout the HTML pages.
 
 ## Notes
