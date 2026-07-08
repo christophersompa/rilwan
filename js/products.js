@@ -247,7 +247,7 @@ const SITE_IMAGES = {
 
   /* category tile imagery */
   catNewArrivals: "images/products/new_arrivals.png",
-  catClothing:    "images/products/activewear.png",
+  catClothing:    "images/products/products/activewear.png",
   catFood:        ph("Food",         { w: 600, h: 600 }),
   catSkincare:    ph("Skincare",     { w: 600, h: 600 }),
   catAccessories: ph("Accessories",  { w: 600, h: 600 })
