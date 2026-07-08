@@ -29,18 +29,18 @@
    Swap the ph(...) call for a real image URL when you have one.
 ----------------------------------------------------------------------- */
 const GRADIENT_PALETTE = [
-  ['#3B82F6', '#1F63E8'],  // blue
-  ['#5B9BF8', '#1E5FE0'],  // light blue -> blue
-  ['#8DBBFB', '#2E6FEA'],  // pale blue -> blue
-  ['#2E6FEA', '#123FA6'],  // blue -> deep
-  ['#4F8DF7', '#1F63E8'],  // sky blue -> blue
-  ['#7AAEF9', '#1B57CC'],  // soft blue -> blue
-  ['#1F63E8', '#0B2E78'],  // blue -> navy
-  ['#9CC4FC', '#2E6FEA'],  // pale -> blue
-  ['#3E82F4', '#0F3FA8'],  // blue -> deep
-  ['#6BA3F8', '#1F63E8'],  // sky -> blue
-  ['#2A66E2', '#0A2A6E'],  // blue -> darkest navy
-  ['#86B6FB', '#1E5FE0']   // light -> blue
+  ['#F97316', '#EA5B0C'],  // bright orange -> burnt orange
+  ['#FBA94C', '#F97316'],  // amber -> bright orange
+  ['#F2A93B', '#D97706'],  // gold -> deep amber
+  ['#EA5B0C', '#A63C06'],  // burnt orange -> terracotta
+  ['#F4A261', '#E76F51'],  // sandy -> coral clay
+  ['#FFB25E', '#E86A10'],  // apricot -> orange
+  ['#D2691E', '#8B4513'],  // ochre -> saddle brown
+  ['#FDBA74', '#F97316'],  // peach -> bright orange
+  ['#C1440E', '#7A2508'],  // deep clay -> dark rust
+  ['#E76F51', '#B23A00'],  // coral -> rust
+  ['#B5490B', '#6E2A05'],  // terracotta -> coffee
+  ['#F9C74F', '#E88C0C']   // sunflower -> marigold
 ];
 
 function _hash(str) {
