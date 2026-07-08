@@ -1,27 +1,29 @@
 /* ============================================
-   BÉSA — design tokens (Lensora-style blue redesign)
+   BÉSA — design tokens (vibrant afro-centric warm theme)
    Swap these values to re-skin the whole site.
+   Note: the --blue-* names are kept so no other file
+   needs to change — they now hold warm orange values.
    ============================================ */
 :root {
   /* core palette */
-  --blue:        #1F63E8;
-  --blue-deep:   #123FA6;
-  --blue-bright: #3B82F6;
-  --blue-soft:   #E3EEFC;
-  --blue-accent:        #BBD3F7;
-  --blue-accent-deep:   #1F63E8;
-  --blue-accent-soft:   #EAF2FD;
+  --blue:        #EA5B0C;
+  --blue-deep:   #A63C06;
+  --blue-bright: #F97316;
+  --blue-soft:   #FDE7D2;
+  --blue-accent:        #F8C89A;
+  --blue-accent-deep:   #EA5B0C;
+  --blue-accent-soft:   #FDF1E3;
 
   /* neutrals */
-  --ink:        #0B1E45;
-  --ink-2:      #15315F;
-  --ink-soft:   #56688E;
-  --ink-faint:  #93A2BE;
+  --ink:        #38200F;
+  --ink-2:      #52301A;
+  --ink-soft:   #8A6A50;
+  --ink-faint:  #BCA48D;
   --white:      #FFFFFF;
-  --sky:      #E8F1FC;
-  --sky-deep: #D6E6FB;
-  --line:       #DCE7F5;
-  --line-soft:  #EDF3FC;
+  --sky:      #FBEFDF;
+  --sky-deep: #F6E0C4;
+  --line:       #EFDCC3;
+  --line-soft:  #F8EEDD;
 
   --radius-sm: 8px;
   --radius-md: 14px;
@@ -762,7 +764,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   bottom: -20%;
   width: 70%;
   height: 80%;
-  background: radial-gradient(ellipse, rgba(59, 130, 246, 0.45) 0%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(249, 115, 22, 0.45) 0%, transparent 70%);
   pointer-events: none;
 }
 .featured-eyebrow {
